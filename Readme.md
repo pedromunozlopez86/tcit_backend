@@ -73,6 +73,28 @@ API REST desarrollada con Node.js, Express y TypeORM para la gestión de posts. 
 
 ## Ejecución del Proyecto
 
+## Configuración de Variables de Entorno (.env.example)
+
+Este archivo sirve como plantilla para configurar las variables de entorno en el proyecto.
+
+### Uso
+
+1. Crea una copia de este archivo y renómbralo a `.env`:
+    ```bash
+    cp .env.example .env
+    ```
+
+2. Completa los valores apropiados para cada variable de entorno en el nuevo archivo `.env`
+
+3. Nunca subas el archivo `.env` real al control de versiones - solo la plantilla `.env.example` debe ser incluida
+
+### Notas Importantes
+
+- El archivo `.env.example` debe contener todas las variables de entorno requeridas con valores de ejemplo
+- La información sensible (contraseñas, claves API, etc.) nunca debe incluirse en el archivo `.env.example`
+- Mantén el archivo `.env.example` actualizado cuando agregues nuevas variables de entorno al proyecto
+
+
 ### Usando Docker Compose
 1. Asegúrate de tener Docker y Docker Compose instalados
 2. En la raíz del proyecto, ejecuta:

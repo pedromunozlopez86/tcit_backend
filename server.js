@@ -36,9 +36,7 @@ app.get("/posts", async (req, res) => {
 
 // Crear un nuevo post
 app.post("/posts", async (req, res) => {
-  console.log("req",req.body)
   const newPost = postRepository.create(req.body);
-  console.log(newPost);
   
   const savedPost = await postRepository.save(newPost);
   res.status(201).json(savedPost);
